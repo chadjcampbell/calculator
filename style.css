@@ -1,0 +1,88 @@
+* {
+    border: 1px solid black;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: blanchedalmond;
+}
+
+#calc {
+  width: 350px;
+  height: 525px;
+  border: 10px solid darkslategray;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  background-color: black;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "display display display display"
+    "reset reset backspace backspace"
+    "data7 data8 data9 divide"
+    "data4 data5 data6 multiply"
+    "data1 data2 data3 minus"
+    "point data0 equals plus"; 
+}
+
+.btn {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.green:hover {
+  background-color: green;
+}
+
+.red:hover {
+  background-color: red;
+}
+
+.yellow:hover {
+  background-color: yellow;
+}
+
+.orange:hover {
+  background-color: orange;
+}
+
+.gray:hover {
+  background-color: darkgray;
+}
+
+.btn:active {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
+}
+
+#data7 { grid-area: data7; }
+#data8 { grid-area: data8; }
+#data9 { grid-area: data9; }
+#display { grid-area: display;
+  background-color: white;
+}
+#reset { grid-area: reset; }
+#backspace { grid-area: backspace; }
+#divide { grid-area: divide; }
+#data4 { grid-area: data4; }
+#data5 { grid-area: data5; }
+#data6 { grid-area: data6; }
+#multiply { grid-area: multiply; }
+#data1 { grid-area: data1; }
+#data2 { grid-area: data2; }
+#data3 { grid-area: data3; }
+#minus { grid-area: minus; }
+#point { grid-area: point; }
+#data0 { grid-area: data0; }
+#equals { grid-area: equals; }
+#plus { grid-area: plus; }
