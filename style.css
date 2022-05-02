@@ -86,3 +86,9 @@ body {
 #data0 { grid-area: data0; }
 #equals { grid-area: equals; }
 #plus { grid-area: plus; }
+
+#display {
+  text-align: right;
+  font-size: 80px;
+  padding-right: 10px;
+}
