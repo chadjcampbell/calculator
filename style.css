@@ -1,18 +1,24 @@
-* {
-    border: 1px solid black;
-}
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
   background-color: blanchedalmond;
+  border: 1px solid black;
+}
+
+footer {
+  border: 10px solid darkslategray;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
 }
 
 #calc {
-  width: 350px;
-  height: 525px;
+  width: 300px;
+  height: 500px;
   border: 10px solid darkslategray;
   border-radius: 5px;
   margin: 5px;

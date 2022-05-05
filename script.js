@@ -105,7 +105,7 @@ divide.addEventListener('click', () => {
 
 let equals = document.querySelector('#equals');
 equals.addEventListener('click', () => {
-    if (operator=='') {return};
+    if (operator=='' || displayValue == '') {return};
     b = parseFloat(displayValue);
     displayValue = operate(operator, a, b);
     display.textContent = parseFloat(displayValue);
